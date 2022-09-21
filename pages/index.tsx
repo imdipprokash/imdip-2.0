@@ -2,10 +2,11 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <Head>
         <title>Dipprokash's Portfolio</title>
         <meta name="description" content="Software Devloper" />
@@ -15,7 +16,9 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section id="hero"></section>
+      <section id="hero" className="snap-center">
+        <HeroSection />
+      </section>
     </div>
   );
 };
